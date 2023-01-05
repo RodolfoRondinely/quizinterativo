@@ -1,17 +1,3 @@
-/* const name =  'Rodolfo'
-console.log(name);
-
-const family = ['rodolfo','enzo','isabela']
-console.log(family);
-family.push('bolinha')
-console.log(family);
-console.log(family.length)
-console.log(family[0].slice(0,4)+family[1].slice(0.3));
-console.log(family.indexOf('isabela'));
-
- */
-
-
 const form = document.querySelector('form')
 const input  = document.querySelectorAll('input')
 const result = document.querySelector('.container-sm')
