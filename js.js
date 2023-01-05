@@ -1,7 +1,8 @@
 const form = document.querySelector('form')
 const input  = document.querySelectorAll('input')
-const result = document.querySelector('.container-sm')
+const result = document.querySelector('.result')
 let score  = 0    
+let totalScore =0
 
 const showResult = event=>{
     event.preventDefault()
@@ -10,14 +11,14 @@ input.forEach(checado =>{
 
 const condiction = checado.checked & checado.value ==='B'
 
-    if (condiction) {
+if (condiction) {
         score ++
+        totalScore =score * 25
 
         result.textContent = `
-        Você acertou ${score} questão
-        o rendimento foi de  ${score * 25}%
+        Você acertou ${score} !!!
+        O rendimento foi de  ${totalScore}%
         `
-        return
     }
 
     if(score === 0 )
