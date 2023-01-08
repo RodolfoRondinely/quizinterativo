@@ -9,7 +9,7 @@ const showResult = event=>{
 
 input.forEach(checado =>{
 
-const condiction = checado.checked & checado.value ==='B'
+const condiction = checado.checked && checado.value ==='B'
 
 if (condiction) {
         score ++
